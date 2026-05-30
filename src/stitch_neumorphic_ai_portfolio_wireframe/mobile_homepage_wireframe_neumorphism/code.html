@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Portfolio | Home</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#c4c0ff",
+                    "on-surface-variant": "#464555",
+                    "outline": "#777587",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#84f5ee",
+                    "tertiary-fixed-dim": "#ffb785",
+                    "on-secondary-fixed": "#00201e",
+                    "surface-dim": "#d5dae1",
+                    "inverse-on-surface": "#ecf1f8",
+                    "tertiary-fixed": "#ffdcc6",
+                    "primary-fixed": "#e3dfff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f6f9ff",
+                    "inverse-primary": "#c4c0ff",
+                    "on-primary-fixed-variant": "#3622ca",
+                    "primary-container": "#675df9",
+                    "on-secondary-container": "#006f6a",
+                    "on-tertiary-container": "#fffbff",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary": "#4d41df",
+                    "on-error": "#ffffff",
+                    "tertiary": "#914800",
+                    "surface-container-high": "#e4e9f0",
+                    "surface-container": "#e9eef5",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#66d8d2",
+                    "background": "#f6f9ff",
+                    "secondary": "#006a66",
+                    "on-tertiary-fixed": "#301400",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-highest": "#dee3ea",
+                    "surface": "#f6f9ff",
+                    "inverse-surface": "#2b3136",
+                    "surface-container-low": "#eff4fb",
+                    "on-primary-fixed": "#100069",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#b65c00",
+                    "on-background": "#171c21",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "secondary-container": "#81f2eb",
+                    "on-surface": "#171c21",
+                    "surface-variant": "#dee3ea",
+                    "surface-tint": "#4f44e2",
+                    "outline-variant": "#c7c4d8",
+                    "on-secondary-fixed-variant": "#00504d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "section-gap": "120px",
+                    "base": "8px",
+                    "container-padding": "32px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "label-sm": ["DM Sans"],
+                    "body-md": ["DM Sans"],
+                    "display-hero": ["Plus Jakarta Sans"],
+                    "body-lg": ["DM Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-hero": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}],
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .neumorphic-raised {
+            box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255,0.5);
+        }
+        .neumorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(163,177,198,0.4), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neumorphic-well {
+            box-shadow: inset 6px 6px 12px rgb(163,177,198,0.5), inset -6px -6px 12px rgba(255,255,255,0.5);
+        }
+        .active-press:active {
+            transform: scale(0.95);
+            box-shadow: inset 4px 4px 8px rgba(163,177,198,0.4), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        body {
+            background-color: #f6f9ff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 left-0 w-full z-50 bg-background px-margin-mobile py-4 flex justify-between items-center">
+<div class="text-headline-md font-extrabold text-primary">AI Portfolio</div>
+<!-- Hamburger Menu Button (Extruded Circle, 44px) -->
+<button class="w-[44px] h-[44px] rounded-full flex items-center justify-center neumorphic-raised bg-background active-press transition-all" id="menuToggle">
+<span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- Slide-down Menu -->
+<nav class="fixed top-0 left-0 w-full h-0 overflow-hidden z-40 transition-all duration-500 ease-in-out bg-background neumorphic-raised" id="mobileMenu">
+<div class="pt-24 pb-8 px-8 flex flex-col gap-4">
+<!-- Home is Active -->
+<a class="text-primary font-bold neumorphic-inset rounded-lg px-6 py-4 flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-label-sm font-label-sm uppercase">Home</span>
+</a>
+<a class="text-on-surface-variant px-6 py-4 flex items-center gap-4 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-label-sm font-label-sm uppercase">About</span>
+</a>
+<a class="text-on-surface-variant px-6 py-4 flex items-center gap-4 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+<span class="text-label-sm font-label-sm uppercase">Projects</span>
+</a>
+<a class="text-on-surface-variant px-6 py-4 flex items-center gap-4 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="article">article</span>
+<span class="text-label-sm font-label-sm uppercase">Blog</span>
+</a>
+<a class="text-on-surface-variant px-6 py-4 flex items-center gap-4 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+<span class="text-label-sm font-label-sm uppercase">Stack</span>
+</a>
+<div class="mt-4 pt-4 border-t border-outline-variant/30">
+<button class="w-full py-4 neumorphic-raised rounded-xl text-primary font-bold active-press">Hire Me</button>
+</div>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="pt-24 px-8 pb-32 flex flex-col gap-8">
+<!-- Hero Section -->
+<section class="flex flex-col gap-6 text-center">
+<div class="w-20 h-20 mx-auto neumorphic-raised rounded-full overflow-hidden p-1 bg-background">
+<div class="w-full h-full rounded-full neumorphic-well flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="robot_2" data-weight="fill" style="font-variation-settings: 'FILL' 1;">robot_2</span>
+</div>
+</div>
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">AI Product Architect</h1>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2 max-w-xs mx-auto">Building the next generation of tactile intelligence systems with precision and care.</p>
+</div>
+<div class="flex gap-4 justify-center mt-2">
+<button class="px-6 py-3 rounded-xl neumorphic-raised bg-background text-primary font-bold active-press text-label-sm">View Work</button>
+<button class="px-6 py-3 rounded-xl neumorphic-inset bg-background text-on-surface-variant font-bold text-label-sm">Contact</button>
+</div>
+</section>
+<!-- Stats Block (Deep Inset) -->
+<section class="grid grid-cols-2 gap-4">
+<div class="neumorphic-well p-6 rounded-3xl text-center">
+<span class="block text-headline-md font-headline-md text-primary">8+</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Projects</span>
+</div>
+<div class="neumorphic-well p-6 rounded-3xl text-center">
+<span class="block text-headline-md font-headline-md text-primary">5Y</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Experience</span>
+</div>
+</section>
+<!-- Project Cards (Single Column) -->
+<section class="flex flex-col gap-8">
+<div class="flex justify-between items-end px-2">
+<h2 class="text-headline-md font-headline-md">Selected Work</h2>
+<span class="text-primary text-label-sm uppercase">View All</span>
+</div>
+<!-- Card 1 -->
+<div class="neumorphic-raised rounded-[32px] p-6 bg-background flex flex-col gap-6">
+<!-- Embossed Placeholder Thumbnail -->
+<div class="aspect-video w-full rounded-2xl neumorphic-inset flex items-center justify-center bg-background overflow-hidden">
+<div class="w-16 h-16 rounded-full neumorphic-raised flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl" data-icon="model_training">model_training</span>
+</div>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Neural Nexus Interface</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">A high-fidelity dashboard for monitoring cross-cluster LLM performance in real-time.</p>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex gap-2">
+<span class="px-3 py-1 rounded-full neumorphic-inset text-[10px] font-bold text-primary uppercase">React</span>
+<span class="px-3 py-1 rounded-full neumorphic-inset text-[10px] font-bold text-primary uppercase">Python</span>
+</div>
+<button class="w-[44px] h-[44px] rounded-full neumorphic-raised flex items-center justify-center active-press">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="neumorphic-raised rounded-[32px] p-6 bg-background flex flex-col gap-6">
+<!-- Embossed Placeholder Thumbnail -->
+<div class="aspect-video w-full rounded-2xl neumorphic-inset flex items-center justify-center bg-background overflow-hidden">
+<div class="w-32 h-12 rounded-xl neumorphic-raised flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="schema">schema</span>
+</div>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">CogniFlow OS</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">Experimental operating system designed for edge-device AI coordination and tactile feedback.</p>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex gap-2">
+<span class="px-3 py-1 rounded-full neumorphic-inset text-[10px] font-bold text-primary uppercase">C++</span>
+<span class="px-3 py-1 rounded-full neumorphic-inset text-[10px] font-bold text-primary uppercase">Rust</span>
+</div>
+<button class="w-[44px] h-[44px] rounded-full neumorphic-raised flex items-center justify-center active-press">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="neumorphic-well rounded-[32px] p-8 text-center flex flex-col gap-6">
+<h2 class="text-headline-md font-headline-md">Let's Build Together</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Available for senior AI consulting and product architecture roles.</p>
+<div class="flex flex-col gap-4">
+<div class="neumorphic-inset rounded-xl p-4 text-left flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+<span class="text-body-md">hello@aipm.portfolio</span>
+</div>
+<button class="w-full py-4 rounded-xl neumorphic-raised bg-background text-primary font-bold active-press">Send Message</button>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation (Shared Component) -->
+<footer class="fixed bottom-0 left-0 w-full z-50 bg-background shadow-[-9px_-9px_16px_rgba(255,255,255,0.5),9px_9px_16px_rgb(163,177,198,0.6)] flex justify-around items-center px-4 py-3 md:hidden rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-primary shadow-[inset_4px_4px_8px_rgba(163,177,198,0.4)] rounded-xl p-2 w-[64px]" href="#">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 w-[64px] active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="text-label-sm font-label-sm">Work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 w-[64px] active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span class="text-label-sm font-label-sm">Blog</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 w-[64px] active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</footer>
+<script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let isOpen = false;
+
+        menuToggle.addEventListener('click', () => {
+            isOpen = !isOpen;
+            if (isOpen) {
+                mobileMenu.style.height = '100vh';
+                menuToggle.querySelector('span').innerText = 'close';
+                menuToggle.classList.add('neumorphic-inset');
+                menuToggle.classList.remove('neumorphic-raised');
+            } else {
+                mobileMenu.style.height = '0';
+                menuToggle.querySelector('span').innerText = 'menu';
+                menuToggle.classList.remove('neumorphic-inset');
+                menuToggle.classList.add('neumorphic-raised');
+            }
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                isOpen = false;
+                mobileMenu.style.height = '0';
+                menuToggle.querySelector('span').innerText = 'menu';
+                menuToggle.classList.remove('neumorphic-inset');
+                menuToggle.classList.add('neumorphic-raised');
+            });
+        });
+
+        // Vibrate interaction for nav (simulated)
+        document.querySelectorAll('footer a, #mobileMenu a').forEach(el => {
+            el.addEventListener('click', () => {
+                if ('vibrate' in navigator) {
+                    navigator.vibrate(20);
+                }
+            });
+        });
+    </script>
+</body></html>

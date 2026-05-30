@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Me | AI Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config Verbatim -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#c4c0ff",
+                    "on-surface-variant": "#464555",
+                    "outline": "#777587",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#84f5ee",
+                    "tertiary-fixed-dim": "#ffb785",
+                    "on-secondary-fixed": "#00201e",
+                    "surface-dim": "#d5dae1",
+                    "inverse-on-surface": "#ecf1f8",
+                    "tertiary-fixed": "#ffdcc6",
+                    "primary-fixed": "#e3dfff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f6f9ff",
+                    "inverse-primary": "#c4c0ff",
+                    "on-primary-fixed-variant": "#3622ca",
+                    "primary-container": "#675df9",
+                    "on-secondary-container": "#006f6a",
+                    "on-tertiary-container": "#fffbff",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary": "#4d41df",
+                    "on-error": "#ffffff",
+                    "tertiary": "#914800",
+                    "surface-container-high": "#e4e9f0",
+                    "surface-container": "#e9eef5",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#66d8d2",
+                    "background": "#f6f9ff",
+                    "secondary": "#006a66",
+                    "on-tertiary-fixed": "#301400",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-highest": "#dee3ea",
+                    "surface": "#f6f9ff",
+                    "inverse-surface": "#2b3136",
+                    "surface-container-low": "#eff4fb",
+                    "on-primary-fixed": "#100069",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#b65c00",
+                    "on-background": "#171c21",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "secondary-container": "#81f2eb",
+                    "on-surface": "#171c21",
+                    "surface-variant": "#dee3ea",
+                    "surface-tint": "#4f44e2",
+                    "outline-variant": "#c7c4d8",
+                    "on-secondary-fixed-variant": "#00504d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "section-gap": "120px",
+                    "base": "8px",
+                    "container-padding": "32px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "label-sm": ["DM Sans"],
+                    "body-md": ["DM Sans"],
+                    "display-hero": ["Plus Jakarta Sans"],
+                    "body-lg": ["DM Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-hero": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}],
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f6f9ff;
+            color: #171c21;
+        }
+
+        /* Neumorphic Shadow Presets */
+        .shadow-extruded {
+            box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+        }
+        
+        .shadow-inset {
+            box-shadow: inset 4px 4px 8px rgba(163, 177, 198, 0.6), inset -4px -4px 8px rgba(255, 255, 255, 0.5);
+        }
+
+        .shadow-deep-inset {
+            box-shadow: inset 8px 8px 16px rgba(163, 177, 198, 0.4), inset -8px -8px 16px rgba(255, 255, 255, 0.4);
+        }
+
+        .active-inset {
+            box-shadow: inset 6px 6px 12px rgb(163, 177, 198, 0.5), inset -6px -6px 12px rgba(255, 255, 255, 0.5);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 12px 12px 20px rgb(163, 177, 198, 0.7), -12px -12px 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .transition-all-custom {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-background dark:bg-background shadow-extruded fixed top-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-gutter py-base max-w-[1200px] mx-auto">
+<div class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary-fixed-dim">
+                AI Portfolio
+            </div>
+<nav class="hidden md:flex items-center gap-2">
+<a class="text-on-surface-variant dark:text-outline px-4 py-2 hover:text-primary transition-all" href="#">Home</a>
+<a class="text-primary dark:text-primary-fixed-dim font-bold active-inset rounded-lg px-4 py-2" href="#">About</a>
+<a class="text-on-surface-variant dark:text-outline px-4 py-2 hover:text-primary transition-all" href="#">Projects</a>
+<a class="text-on-surface-variant dark:text-outline px-4 py-2 hover:text-primary transition-all" href="#">Blog</a>
+<a class="text-on-surface-variant dark:text-outline px-4 py-2 hover:text-primary transition-all" href="#">Stack</a>
+</nav>
+<button class="bg-background shadow-extruded hover:shadow-inset transition-all-custom px-6 py-2 rounded-xl text-primary font-bold text-label-sm">
+                Hire Me
+            </button>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-gutter pt-32 pb-section-gap space-y-section-gap">
+<!-- Section 1: Personal Introduction -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-4 flex justify-center">
+<div class="w-64 h-64 rounded-full shadow-extruded p-4 bg-background overflow-hidden">
+<img alt="Senior AI PM" class="w-full h-full object-cover rounded-full" data-alt="A professional headshot of a senior AI product manager with a focused yet friendly expression. The background is a clean, minimalist studio setting with soft, high-key lighting that perfectly matches the light-mode UI. The overall aesthetic is professional, modern, and high-tech, characterized by soft shadows and a neutral color palette of whites and cool grays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSwmpFI5MLEB_PfnKB5ti8TJp0sDyGD1L-gzl0mZ95LaEPoCkL-yAZqRnZoTHwOozdW1kKCYANsH1BmKnT14h7aCiO9OdmHSoRMUHeuT4uki3-_6JhU6lU6uJsjtKlLn8jrKUvt5NUejRYHz1jjcNyzlyU51-GX_3ZQPLS8I0dXbG1_sh25LAK2ukCkgVH6sQMK9XUTWNluZ3EQJFpphASvRYOgWKMN0bDUfLyGbn4JVi5rCywW9g-AYz65W5SHVWVvr5Yuk4zW9s"/>
+</div>
+</div>
+<div class="md:col-span-8">
+<div class="bg-background shadow-extruded rounded-[32px] p-container-padding transition-all-custom">
+<h1 class="font-headline-lg text-headline-lg text-primary mb-4">I build intelligence into interfaces.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        I am a Senior AI Product Manager and ecosystem builder specializing in the intersection of LLM orchestration and human-centric design. With over a decade of experience in technical product leadership, I help organizations navigate the complexities of generative AI to create tools that feel like extensions of human thought.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Section 2: Skills & Passions -->
+<section class="space-y-12">
+<div class="text-center">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Skills &amp; Passions</h2>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Mastery of Modern Workflows</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-section-gap items-start">
+<!-- Tools -->
+<div class="space-y-6">
+<h3 class="font-headline-sm text-headline-md text-primary px-2">Core Tools</h3>
+<div class="flex flex-wrap gap-6">
+<div class="flex flex-col items-center gap-3">
+<div class="w-20 h-20 shadow-deep-inset rounded-2xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="smart_toy">smart_toy</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Claude</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="w-20 h-20 shadow-deep-inset rounded-2xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="terminal">terminal</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cursor</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="w-20 h-20 shadow-deep-inset rounded-2xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="schema">schema</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">LangChain</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="w-20 h-20 shadow-deep-inset rounded-2xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="frame_inspect">frame_inspect</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Figma</span>
+</div>
+</div>
+</div>
+<!-- AI Technologies Grid -->
+<div class="space-y-6">
+<h3 class="font-headline-sm text-headline-md text-primary px-2">AI Expertise</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-background shadow-extruded rounded-full px-6 py-4 flex items-center gap-3 transition-all-custom active-inset cursor-default">
+<span class="material-symbols-outlined text-primary" data-icon="bolt">bolt</span>
+<span class="font-label-sm text-label-sm text-on-surface">AI Prompting</span>
+</div>
+<div class="bg-background shadow-extruded rounded-full px-6 py-4 flex items-center gap-3 transition-all-custom active-inset cursor-default">
+<span class="material-symbols-outlined text-primary" data-icon="database">database</span>
+<span class="font-label-sm text-label-sm text-on-surface">RAG Design</span>
+</div>
+<div class="bg-background shadow-extruded rounded-full px-6 py-4 flex items-center gap-3 transition-all-custom active-inset cursor-default">
+<span class="material-symbols-outlined text-primary" data-icon="hub">hub</span>
+<span class="font-label-sm text-label-sm text-on-surface">Agent Orchestration</span>
+</div>
+<div class="bg-background shadow-extruded rounded-full px-6 py-4 flex items-center gap-3 transition-all-custom active-inset cursor-default">
+<span class="material-symbols-outlined text-primary" data-icon="visibility">visibility</span>
+<span class="font-label-sm text-label-sm text-on-surface">Computer Vision</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Blog/Writing List -->
+<section class="space-y-8">
+<div class="flex justify-between items-end px-2">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Writing &amp; Insights</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Exploring the frontier of human-AI collaboration.</p>
+</div>
+<button class="bg-background shadow-extruded rounded-xl px-4 py-2 font-label-sm text-label-sm text-primary hover:shadow-inset transition-all-custom">
+                    View Archive
+                </button>
+</div>
+<div class="space-y-6">
+<!-- Article 1 -->
+<div class="bg-background shadow-extruded rounded-[24px] p-6 hover-lift transition-all-custom flex flex-col md:flex-row md:items-center gap-6 cursor-pointer">
+<div class="w-full md:w-32 h-24 shadow-deep-inset rounded-xl flex items-center justify-center bg-background">
+<span class="material-symbols-outlined text-4xl text-outline opacity-30" data-icon="article">article</span>
+</div>
+<div class="flex-1">
+<span class="font-label-sm text-label-sm text-primary">February 2024</span>
+<h4 class="font-headline-sm text-headline-md text-on-surface mt-1">The Architecture of Agentic Workflows</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">How to build systems that don't just respond, but reason and act autonomously.</p>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<!-- Article 2 -->
+<div class="bg-background shadow-extruded rounded-[24px] p-6 hover-lift transition-all-custom flex flex-col md:flex-row md:items-center gap-6 cursor-pointer">
+<div class="w-full md:w-32 h-24 shadow-deep-inset rounded-xl flex items-center justify-center bg-background">
+<span class="material-symbols-outlined text-4xl text-outline opacity-30" data-icon="menu_book">menu_book</span>
+</div>
+<div class="flex-1">
+<span class="font-label-sm text-label-sm text-primary">January 2024</span>
+<h4 class="font-headline-sm text-headline-md text-on-surface mt-1">Neumorphism in the Age of AI</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Why tactile UI is making a comeback as our digital experiences become more ephemeral.</p>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</section>
+<!-- Section 4: Tech Stack Display -->
+<section class="space-y-12">
+<div class="text-center">
+<h2 class="font-headline-md text-headline-md text-on-surface">Technical Arsenal</h2>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Built with tactile precision</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product Competencies -->
+<div class="bg-background shadow-extruded rounded-[32px] p-8 space-y-6">
+<div class="w-12 h-12 shadow-inset rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="strategy">strategy</span>
+</div>
+<h3 class="font-headline-sm text-headline-md text-on-surface">Product</h3>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Roadmap Strategy</li>
+<li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> GTM Planning</li>
+<li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> UX Research</li>
+<li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Agile Leadership</li>
+</ul>
+</div>
+<!-- AI Capabilities -->
+<div class="bg-background shadow-extruded rounded-[32px] p-8 space-y-6">
+<div class="w-12 h-12 shadow-inset rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="memory">memory</span>
+</div>
+<h3 class="font-headline-sm text-headline-md text-on-surface">AI/ML</h3>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Vector DBs (Pinecone)</li>
+<li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Open Source Models</li>
+<li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Fine-tuning Pipelines</li>
+<li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Ethics &amp; Bias Audit</li>
+</ul>
+</div>
+<!-- Technical Stack -->
+<div class="bg-background shadow-extruded rounded-[32px] p-8 space-y-6">
+<div class="w-12 h-12 shadow-inset rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+</div>
+<h3 class="font-headline-sm text-headline-md text-on-surface">Development</h3>
+<div class="grid grid-cols-2 gap-3">
+<div class="shadow-deep-inset rounded-lg p-3 text-center font-label-sm text-label-sm text-on-surface-variant">React</div>
+<div class="shadow-deep-inset rounded-lg p-3 text-center font-label-sm text-label-sm text-on-surface-variant">Next.js</div>
+<div class="shadow-deep-inset rounded-lg p-3 text-center font-label-sm text-label-sm text-on-surface-variant">FastAPI</div>
+<div class="shadow-deep-inset rounded-lg p-3 text-center font-label-sm text-label-sm text-on-surface-variant">Python</div>
+<div class="shadow-deep-inset rounded-lg p-3 text-center font-label-sm text-label-sm text-on-surface-variant">TypeScript</div>
+<div class="shadow-deep-inset rounded-lg p-3 text-center font-label-sm text-label-sm text-on-surface-variant">Node.js</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background shadow-[inset_0px_9px_16px_rgb(163,177,198,0.3)] w-full py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-[1200px] mx-auto">
+<div class="font-bold text-primary font-headline-md">AI Portfolio</div>
+<div class="flex gap-8 my-6 md:my-0">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Twitter</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Email</a>
+</div>
+<div class="text-body-md font-body-md text-on-surface-variant">
+                © 2024 AI PM Portfolio. Built with tactile precision.
+            </div>
+</div>
+</footer>
+<!-- Mobile Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 md:hidden bg-background shadow-[-9px_-9px_16px_rgba(255,255,255,0.5),9px_9px_16px_rgb(163,177,198,0.6)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary shadow-inset rounded-xl p-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_circle</span>
+<span class="text-label-sm font-label-sm">About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-label-sm font-label-sm">Work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2" href="#">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="text-label-sm font-label-sm">Blog</span>
+</a>
+</nav>
+<script>
+        // Micro-interactions for buttons
+        document.querySelectorAll('button, .hover-lift').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.transform = 'scale(0.98)';
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = 'scale(1)';
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body></html>

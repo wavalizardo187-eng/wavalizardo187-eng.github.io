@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Portfolio | Blog &amp; Experience</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=DM+Sans:wght@400;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f6f9ff;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Neumorphic Shadow Helpers */
+        .shadow-extruded {
+            box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+        }
+        .shadow-inset {
+            box-shadow: inset 6px 6px 12px rgb(163, 177, 198, 0.5), inset -6px -6px 12px rgba(255, 255, 255, 0.5);
+        }
+        .shadow-inset-deep {
+            box-shadow: inset 4px 4px 8px rgba(163, 177, 198, 0.4), inset -4px -4px 8px rgba(255, 255, 255, 0.5);
+        }
+        .shadow-extruded-hover:hover {
+            box-shadow: 4px 4px 8px rgb(163, 177, 198, 0.4), -4px -4px 8px rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+        .transition-all {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#c4c0ff",
+                        "on-surface-variant": "#464555",
+                        "outline": "#777587",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#84f5ee",
+                        "tertiary-fixed-dim": "#ffb785",
+                        "on-secondary-fixed": "#00201e",
+                        "surface-dim": "#d5dae1",
+                        "inverse-on-surface": "#ecf1f8",
+                        "tertiary-fixed": "#ffdcc6",
+                        "primary-fixed": "#e3dfff",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f6f9ff",
+                        "inverse-primary": "#c4c0ff",
+                        "on-primary-fixed-variant": "#3622ca",
+                        "primary-container": "#675df9",
+                        "on-secondary-container": "#006f6a",
+                        "on-tertiary-container": "#fffbff",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary": "#4d41df",
+                        "on-error": "#ffffff",
+                        "tertiary": "#914800",
+                        "surface-container-high": "#e4e9f0",
+                        "surface-container": "#e9eef5",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#66d8d2",
+                        "background": "#f6f9ff",
+                        "secondary": "#006a66",
+                        "on-tertiary-fixed": "#301400",
+                        "on-primary-container": "#fffbff",
+                        "surface-container-highest": "#dee3ea",
+                        "surface": "#f6f9ff",
+                        "inverse-surface": "#2b3136",
+                        "surface-container-low": "#eff4fb",
+                        "on-primary-fixed": "#100069",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#b65c00",
+                        "on-background": "#171c21",
+                        "on-tertiary-fixed-variant": "#713700",
+                        "secondary-container": "#81f2eb",
+                        "on-surface": "#171c21",
+                        "surface-variant": "#dee3ea",
+                        "surface-tint": "#4f44e2",
+                        "outline-variant": "#c7c4d8",
+                        "on-secondary-fixed-variant": "#00504d"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "120px",
+                        "base": "8px",
+                        "container-padding": "32px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["DM Sans"],
+                        "body-md": ["DM Sans"],
+                        "display-hero": ["Plus Jakarta Sans"],
+                        "body-lg": ["DM Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-background shadow-[9px_9px_16px_rgb(163,177,198,0.6),-9px_-9px_16px_rgba(255,255,255,0.5)]">
+<nav class="flex justify-between items-center w-full px-gutter py-base max-w-[1200px] mx-auto">
+<span class="text-headline-md font-headline-md font-extrabold text-primary">AI Portfolio</span>
+<div class="hidden md:flex gap-4">
+<a class="text-on-surface-variant px-4 py-2 hover:text-primary transition-all" href="#">Home</a>
+<a class="text-on-surface-variant px-4 py-2 hover:text-primary transition-all" href="#">About</a>
+<a class="text-on-surface-variant px-4 py-2 hover:text-primary transition-all" href="#">Projects</a>
+<a class="text-primary font-bold shadow-[inset_4px_4px_8px_rgba(163,177,198,0.6),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] rounded-lg px-4 py-2" href="#">Blog</a>
+<a class="text-on-surface-variant px-4 py-2 hover:text-primary transition-all" href="#">Stack</a>
+</div>
+<button class="px-6 py-2 rounded-lg bg-background shadow-extruded text-primary font-bold hover:shadow-inset transition-all active:scale-95">Hire Me</button>
+</nav>
+</header>
+<main class="max-w-[1200px] mx-auto px-gutter pt-[140px] pb-section-gap">
+<!-- Page Title -->
+<section class="mb-section-gap">
+<h1 class="text-display-hero font-display-hero text-primary mb-base">Experience &amp; Thoughts</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">Sharing insights on AI methodologies, product engineering, and the future of tactile digital interfaces.</p>
+</section>
+<!-- Blog/Experience Section -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-container-padding mb-section-gap">
+<!-- Methodologies Category -->
+<div class="flex flex-col gap-6">
+<h2 class="text-headline-md font-headline-md text-primary px-2">Methodologies</h2>
+<div class="p-6 rounded-[32px] bg-background shadow-extruded shadow-extruded-hover transition-all cursor-pointer">
+<div class="w-full aspect-video rounded-2xl shadow-inset mb-4 flex items-center justify-center overflow-hidden">
+<img class="object-cover w-full h-full" data-alt="A clean, minimalist 3D render of abstract translucent geometric shapes floating in a bright, airy white space. The lighting is soft and directional, creating subtle blue-toned shadows. The overall aesthetic is surgical, technical, and high-modernist with a primary focus on depth and layered materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5hMjEnOTEjflWb2T0C75AxByJLmafMuwB2X4llqR25mzciL4crzhEwx9bFzT4tQfS_U5JcupGAVB92ZtqjHp4gXUTiwmqeJHUJrNjYOkM6tAO6m_vKWuPdgCUKwEG58iArOa9D9GlZJs4zqykxpLZJVqCzqpZ8_WxC0DMB3dy1N8Ieh5Ntx52TxqahIY-EmJaUpJstQk4lJpdWOGl2dDdkjzrq55-HFMXbC2V1kNFRLKKanDbZ2veSDBUGnT7ghx5Bbyjxi50xhY"/>
+</div>
+<h3 class="text-headline-sm font-headline-md mb-2">Agile AI Integration</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">How to weave machine learning cycles into traditional sprint structures without losing velocity.</p>
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-primary shadow-inset-deep">Sprint</span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-primary shadow-inset-deep">AI Ops</span>
+</div>
+</div>
+</div>
+<!-- Case Studies Category -->
+<div class="flex flex-col gap-6">
+<h2 class="text-headline-md font-headline-md text-primary px-2">Case Studies</h2>
+<div class="p-6 rounded-[32px] bg-background shadow-extruded shadow-extruded-hover transition-all cursor-pointer">
+<div class="w-full aspect-video rounded-2xl shadow-inset mb-4 flex items-center justify-center overflow-hidden">
+<img class="object-cover w-full h-full" data-alt="A detailed macro photograph of an advanced silicon chip architecture, reimagined as a futuristic city landscape at dawn. The color palette is composed of cool blues, crisp whites, and vibrant violet highlights. The image conveys a sense of extreme precision and complex digital craftsmanship in a bright light-mode environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKT8BFM8j1EoTtNnBr1kjSLn3R6p4NQExqUUg984WJCjy4c6JYnHgKRZ4cRMRkmJY63uMMqaniVyBX4eP04nPdfuk0VWAWqRqHU-YdnYMJioUAppEHWpPVTE10XNsJXP3NBMyaBVzUqTGbauu6CfmHR_oKViJZEKHR8fgogaIu0-NLuaO4mgeMNQ8KW6f1QXA-0S39XdQqwGn8xgrS9pHoqfX3-1DJV_8axwEgg8ViafrQ2b_6WakY-RNojar1Vg9tu1Sf6vgn1Kk"/>
+</div>
+<h3 class="text-headline-sm font-headline-md mb-2">The Soft UI Shift</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">A deep dive into why tactile interfaces are making a comeback in the age of generative AI.</p>
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-primary shadow-inset-deep">UX Design</span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-primary shadow-inset-deep">Psychology</span>
+</div>
+</div>
+</div>
+<!-- AI Tutorials Category -->
+<div class="flex flex-col gap-6">
+<h2 class="text-headline-md font-headline-md text-primary px-2">AI Tutorials</h2>
+<div class="p-6 rounded-[32px] bg-background shadow-extruded shadow-extruded-hover transition-all cursor-pointer">
+<div class="w-full aspect-video rounded-2xl shadow-inset mb-4 flex items-center justify-center overflow-hidden">
+<img class="object-cover w-full h-full" data-alt="An ethereal digital artwork depicting glowing streams of data flowing through a soft-focus porcelain laboratory. The scene is illuminated by natural daylight, emphasizing a clean and clinical yet inviting atmosphere. Accents of soft lavender and electric blue highlight the intersection of nature and high-tech artificial intelligence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRHOoLzxQtckVjzFq4jEGFuK2VmGOAj26VfkGUJ-F08oP0vS59n0KV7HpWMsQGfG4V0V7xRNQguHojd1KTUzQPgFMz4SCQj9QQ5QB722VLQ_zjBWQMYUdms7yLHoybkXbgeAMMSsiqTU9n3SkYzOMknVm_XPoQtRaN4P-_eYG2UZ_IcLskaJ1-BQzuHvU8rgAqdYx_FsbwmBWwUsY17M72UfYrnV0iel_5z0Imz-EjlW2KRznSyrc0VnUloorKSe_GR8wK-cpRsxQ"/>
+</div>
+<h3 class="text-headline-sm font-headline-md mb-2">Prompt Engineering 101</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">Mastering the art of linguistic precision to achieve perfect model alignment every time.</p>
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-primary shadow-inset-deep">LLM</span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-primary shadow-inset-deep">Tutorial</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Design System Section -->
+<section class="p-container-padding rounded-[32px] bg-background shadow-extruded mb-section-gap">
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-section-gap text-center">Design System DNA</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap">
+<!-- Color Palette -->
+<div>
+<h3 class="text-headline-md font-headline-md text-primary mb-8">Color Palette</h3>
+<div class="flex flex-wrap gap-8">
+<div class="flex flex-col items-center gap-4">
+<div class="w-24 h-24 rounded-full bg-primary shadow-extruded flex items-center justify-center text-white font-bold">#4D41DF</div>
+<span class="text-label-sm font-label-sm">Primary</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-24 h-24 rounded-full bg-secondary shadow-extruded flex items-center justify-center text-white font-bold">#006A66</div>
+<span class="text-label-sm font-label-sm">Secondary</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-24 h-24 rounded-full bg-tertiary shadow-extruded flex items-center justify-center text-white font-bold">#914800</div>
+<span class="text-label-sm font-label-sm">Tertiary</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-24 h-24 rounded-full bg-background shadow-inset flex items-center justify-center text-on-surface font-bold">#F6F9FF</div>
+<span class="text-label-sm font-label-sm">Surface</span>
+</div>
+</div>
+</div>
+<!-- Typography Specimens -->
+<div>
+<h3 class="text-headline-md font-headline-md text-primary mb-8">Typography Specimens</h3>
+<div class="space-y-6">
+<div class="p-4 rounded-xl shadow-inset-deep bg-background">
+<p class="text-display-hero font-display-hero text-on-surface">Display Hero</p>
+<p class="text-label-sm font-label-sm text-outline">Plus Jakarta Sans - 64px / 800</p>
+</div>
+<div class="p-4 rounded-xl shadow-inset-deep bg-background">
+<p class="text-headline-lg font-headline-lg text-on-surface">Headline Large</p>
+<p class="text-label-sm font-label-sm text-outline">Plus Jakarta Sans - 40px / 700</p>
+</div>
+<div class="p-4 rounded-xl shadow-inset-deep bg-background">
+<p class="text-body-lg font-body-lg text-on-surface">Body Large Reading Text</p>
+<p class="text-label-sm font-label-sm text-outline">DM Sans - 18px / 500</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="max-w-3xl mx-auto">
+<div class="p-12 rounded-[40px] bg-background shadow-extruded">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-base text-center">Let's Connect</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-10 text-center">Ready to discuss your next breakthrough AI product or creative collaboration.</p>
+<form class="space-y-8">
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface ml-4">Full Name</label>
+<input class="w-full px-6 py-4 rounded-2xl bg-background shadow-inset-deep border-none focus:ring-2 focus:ring-primary/20 text-body-md outline-none" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface ml-4">Email Address</label>
+<input class="w-full px-6 py-4 rounded-2xl bg-background shadow-inset-deep border-none focus:ring-2 focus:ring-primary/20 text-body-md outline-none" placeholder="john@example.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface ml-4">Message</label>
+<textarea class="w-full px-6 py-4 rounded-2xl bg-background shadow-inset-deep border-none focus:ring-2 focus:ring-primary/20 text-body-md outline-none resize-none" placeholder="Tell me about your project..." rows="4"></textarea>
+</div>
+<button class="w-full py-5 rounded-2xl bg-background shadow-extruded text-primary font-bold text-headline-sm hover:shadow-inset transition-all active:scale-95">Send Message</button>
+</form>
+<div class="mt-12 pt-12 border-t border-outline-variant flex flex-col items-center gap-8">
+<p class="text-label-sm font-label-sm uppercase tracking-widest text-outline">Find me on social</p>
+<div class="flex gap-6">
+<a class="w-14 h-14 rounded-2xl bg-background shadow-extruded flex items-center justify-center text-primary hover:shadow-inset transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">rocket_launch</span>
+</a>
+<a class="w-14 h-14 rounded-2xl bg-background shadow-extruded flex items-center justify-center text-primary hover:shadow-inset transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">terminal</span>
+</a>
+<a class="w-14 h-14 rounded-2xl bg-background shadow-extruded flex items-center justify-center text-primary hover:shadow-inset transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">article</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-background shadow-[inset_0px_9px_16px_rgb(163,177,198,0.3)] mt-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-[1200px] mx-auto gap-8">
+<span class="font-bold text-primary text-headline-md">AI Portfolio</span>
+<p class="text-body-md font-body-md text-on-surface-variant">© 2024 AI PM Portfolio. Built with tactile precision.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm" href="#">Twitter</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm" href="#">Email</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 md:hidden bg-background shadow-[-9px_-9px_16px_rgba(255,255,255,0.5),9px_9px_16px_rgb(163,177,198,0.6)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-label-sm font-label-sm">Work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary shadow-[inset_4px_4px_8px_rgba(163,177,198,0.4)] rounded-xl p-2 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="text-label-sm font-label-sm">Blog</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+<script>
+        // Simple micro-interactions for neumorphic buttons
+        document.querySelectorAll('button, a, .shadow-extruded').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                if(!el.classList.contains('shadow-inset')) {
+                    el.style.transform = 'scale(0.98)';
+                }
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = '';
+            });
+        });
+    </script>
+</body></html>
