@@ -11,9 +11,9 @@ function About() {
         </div>
         <div className="md:col-span-8">
           <div className="bg-background neumorphic-extruded rounded-32 p-container-padding transition-all-custom">
-            <h1 className="text-headline-lg font-display text-primary mb-4">我把智能写进界面里。</h1>
+            <h1 className="text-headline-lg font-display text-primary mb-4">AI产品经理</h1>
             <p className="text-body-lg font-body text-on-surface-variant leading-relaxed">
-              我是一名资深 AI 产品经理与生态构建者，专注于大模型编排与人本设计的交汇。十余年技术产品带队经验，帮助组织在生成式 AI 的复杂性中找到路径，打造像人类思维延伸一样的工具。
+              小冯子
             </p>
           </div>
         </div>
